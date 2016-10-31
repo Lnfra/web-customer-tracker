@@ -18,6 +18,8 @@
 		</div>
 		<div id="container">
 			<h3>Save Customer</h3>
+			<!--  upon load form will prepopulate form with data from modelAttribute from controller-->
+			<!--  upon submit form will set the form data to the modelAttribute and send to controller-->
 			<form:form action="saveCustomer" modelAttribute="customer" method="POST">
 			<table>
 				<tbody>
