@@ -21,6 +21,11 @@
 			<!--  upon load form will prepopulate form with data from modelAttribute from controller-->
 			<!--  upon submit form will set the form data to the modelAttribute and send to controller-->
 			<form:form action="saveCustomer" modelAttribute="customer" method="POST">
+			
+			<!-- need to associate this data with customer id -->
+			<!-- for controller to know which customer to update -->
+			<form:hidden path="id"/>
+			
 			<table>
 				<tbody>
 					<tr>
